@@ -6,10 +6,16 @@ Define a procedure histogram() that takes a list of integers and prints a histog
 *********
 *******
 '''
-def histogram(*args):
 
-    print(' HISTOGRAM')
-    for i in args:
-        print(' * ' * i + '[{}]'.format(i))
+int_list = [22, 55, 10, 17]
 
-histogram(1, 22, 55)
+
+def histogram(list):
+    print(' HISTOGRAM\n\n')
+
+    # iterate through list and print 
+    for i in list:
+        print(' * ' * i + '[{}]'.format(i)) # print "*" * i
+
+
+histogram(int_list)

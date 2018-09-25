@@ -28,12 +28,13 @@ def make_ing_form(verb):
         present_verb = ''.join(split_verb) # set present_verb to string form of split_verb
         return present_verb
     elif verb.endswith('e'):
-        del split_verb[-1:]
-        split_verb.append(extension2)
-        present_verb = ''.join(split_verb) 
-        return present_verb
+        if verb not in exceptions:
+            del split_verb[-1:]
+            split_verb.append(extension2)
+            present_verb = ''.join(split_verb) 
+            return present_verb
     
 print(make_ing_form('be'))
-print(make_ing_form('See'))
+print(make_ing_form('see'))
 print(make_ing_form('die'))
 print(make_ing_form('lie'))

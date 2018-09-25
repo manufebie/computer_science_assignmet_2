@@ -25,5 +25,6 @@ def is_pangram(phrase):
             break
     
 
-my_pangram = 'x' 
+my_pangram = input('Pangram: ')
+print()
 is_pangram(my_pangram)

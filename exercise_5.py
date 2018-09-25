@@ -3,7 +3,9 @@ Exercise 5:
 
 Write a function is_member() that takes a value (i.e. a number, string, etc) x and a list of values a, and returns True if x is a member of a, False otherwise. (Note that this is exactly what the in operator does, but for the sake of the exercise you should pretend Python did not have this operator.)
 '''
+
 my_list = [1,2,3,4,5,6,7,8,9,10]
+
 
 def is_member(x, a):
     for item in a: # Iterates through a (my_list)
